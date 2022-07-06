@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "step_dict"
+name = "step-dict"
 version = "0.1.0"

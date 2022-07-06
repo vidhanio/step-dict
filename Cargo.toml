@@ -1,6 +1,13 @@
 [package]
-name = "step_dict"
+name = "step-dict"
 version = "0.1.0"
 edition = "2021"
+description = "step through dictionary words"
+authors = ["Vidhan Bhatt <me@vidhan.io>"]
+license = "AGPL-3.0"
+documentation = "https://docs.rs/step-dict"
+homepage = "https://github.com/vidhanio/step-dict"
+repository = "https://github.com/vidhanio/step-dict"
+
 
 [dependencies]

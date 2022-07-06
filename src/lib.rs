@@ -3,7 +3,7 @@
 #![warn(missing_docs)]
 #![feature(step_trait)]
 
-//! # step through dictionary words
+//! # step-dict
 //!
 //! ## Usage
 //!
