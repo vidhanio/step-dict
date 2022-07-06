@@ -73,3 +73,27 @@ impl Display for Word<'_> {
         write!(f, "{}", self.0)
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn sus() {
+        let mut iter = Word("among")..=Word("us");
+
+        // funny
+        assert_eq!(iter.next(), Some(Word("among")));
+
+        // unfunny
+        assert_eq!(iter.next(), Some(Word("amongst")));
+        assert_eq!(iter.next(), Some(Word("amontillado")));
+
+        // funny
+        assert_eq!(iter.nth(428_210), Some(Word("sus")));
+        assert_eq!(iter.nth(43526), Some(Word("us")));
+
+        // unfunny
+        assert_eq!(iter.next(), None);
+    }
+}
