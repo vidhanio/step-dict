@@ -91,7 +91,7 @@ mod tests {
 
         // funny
         assert_eq!(iter.nth(428_210), Some(Word("sus")));
-        assert_eq!(iter.nth(43526), Some(Word("us")));
+        assert_eq!(iter.nth(43_526), Some(Word("us")));
 
         // unfunny
         assert_eq!(iter.next(), None);
