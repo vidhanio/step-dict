@@ -52,7 +52,7 @@ impl Step for Word<'_> {
     fn forward_checked(Self(start): Self, count: usize) -> Option<Self> {
         let start = WORDS
             .binary_search(&start)
-            .expect("start, should be in WORDS");
+            .expect("start should be in WORDS");
         let end = start + count;
 
         WORDS.get(end).map(|s| Self(s))
